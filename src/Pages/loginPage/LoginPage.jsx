@@ -12,17 +12,34 @@ const LoginPage = () => {
     setSelectedRole(role);
   };
 
-  const continueToPoll = async () => {
-    if (selectedRole === "teacher") {
-      let teacherlogin = await axios.post(`${apiUrl}/teacher-login`);
-      sessionStorage.setItem("username", teacherlogin.data.username);
-      navigate("/teacher-home-page");
-    } else if (selectedRole === "student") {
-      navigate("/student-home-page");
-    } else {
-      alert("Please select a role.");
+const continueToPoll = async () => {
+  if (!selectedRole) {
+    alert("Please select a role.");
+    return;
+  }
+
+  if (selectedRole === "teacher") {
+    try {
+      const username = prompt("Enter your username"); // simple input for demo
+      const password = prompt("Enter your password");
+      const teacherlogin = await axios.post(`${apiUrl}/teacher-login`, {
+        username,
+        password,
+      });
+      if (teacherlogin.data.username) {
+        sessionStorage.setItem("username", teacherlogin.data.username);
+        navigate("/teacher-home-page");
+      } else {
+        alert("Login failed. Check your credentials.");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("Login failed. Please try again.");
     }
-  };
+  } else if (selectedRole === "student") {
+    navigate("/student-home-page");
+  }
+};
 
   return (
     <div className="d-flex justify-content-center align-items-center vh-100">
