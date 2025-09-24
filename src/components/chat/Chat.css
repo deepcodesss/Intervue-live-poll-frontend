@@ -1,0 +1,49 @@
+.tab-item {
+  color: rgba(90, 102, 209, 1) !important;
+}
+
+/* Chat.css */
+
+/* Current user's message styling */
+.current-user {
+  background: rgba(143, 100, 225, 1); /* Background for current user */
+  color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  padding: 8px;
+  width: 60%; /* Optional: Limit width */
+  margin-left: auto; /* Push current user messages to the right */
+  word-wrap: break-word; /* Allows long words to break and wrap */
+  white-space: pre-wrap;
+}
+
+/* Other user's message styling */
+.other-user {
+  background-color: rgba(
+    58,
+    58,
+    59,
+    1
+  ); /* Light grey or any other color for others */
+  color: rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  padding: 8px;
+  width: 60%; /* Optional: Limit width */
+  margin-right: auto; /* Push other user messages to the left */
+  word-wrap: break-word; /* Allows long words to break and wrap */
+  white-space: pre-wrap;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+td button{
+    padding: 0px !important;
+}

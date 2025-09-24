@@ -1,0 +1,16 @@
+.progress-bar-bg {
+  background-color: #7565d9;
+}
+.question {
+  background: linear-gradient(90deg, #343434 0%, #6e6e6e 100%);
+}
+
+.ask-question {
+  float: right;
+  background: linear-gradient(99.18deg, #8F64E1 -46.89%, #1D68BD 223.45%);
+  color: #ffffff !important;
+}
+.poll-history{
+    background: rgba(143, 100, 225, 1);
+
+}

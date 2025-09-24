@@ -1,0 +1,54 @@
+
+  
+  .poll-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .poll-description {
+    margin-bottom: 30px;
+    color:  rgba(0, 0, 0, 0.5);
+
+  }
+  
+  .role-btn {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    margin-bottom: 20px;
+    width: 45%;
+  }
+  
+  .role-btn.active {
+    border-color: #6f42c1;
+    
+  }
+  
+  .role-btn p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+  
+  .role-btn span {
+    display: block;
+    font-size: 0.9rem;
+    color: #6c757d;
+  }
+  .intervue-btn{
+    background: linear-gradient(90deg, #7565D9 0%, #4D0ACD 100%);
+    align-content: center;
+    color: white !important;
+    border-radius: 25px !important;
+    font-size: 1rem !important;
+  }
+  .continue-btn {
+background: linear-gradient(99.18deg, #8F64E1 -46.89%, #1D68BD 223.45%);
+    color: white !important;
+    border-radius: 25px !important;
+    padding: 10px 30px !important;
+    font-size: 1rem !important;
+  }
+  
