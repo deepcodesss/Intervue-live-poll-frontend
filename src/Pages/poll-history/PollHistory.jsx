@@ -4,10 +4,8 @@ import io from "socket.io-client";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import backIcon from "../../assets/back.svg";
-let apiUrl =
-  import.meta.env.VITE_NODE_ENV === "production"
-    ? import.meta.env.VITE_API_BASE_URL
-    : "http://localhost:3000";
+let apiUrl = import.meta.env.VITE_API_BASE_URL;
+
 const socket = io(apiUrl);
 
 const PollHistoryPage = () => {

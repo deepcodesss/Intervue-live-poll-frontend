@@ -3,10 +3,8 @@ import stars from "../../assets/spark.svg";
 import "./LoginPage.css";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-let apiUrl =
-  import.meta.env.VITE_NODE_ENV === "production"
-    ? import.meta.env.VITE_API_BASE_URL
-    : "http://localhost:3000";
+let apiUrl = import.meta.env.VITE_API_BASE_URL;
+
 const LoginPage = () => {
   const [selectedRole, setSelectedRole] = useState(null);
   const navigate = useNavigate();
