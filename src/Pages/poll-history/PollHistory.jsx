@@ -42,7 +42,7 @@ const PollHistoryPage = () => {
           src={backIcon}
           alt=""
           width={"25px"}
-          srcset=""
+          srcSet=""
           style={{ cursor: "pointer" }}
           onClick={handleBack}
         />{" "}

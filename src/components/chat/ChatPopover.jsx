@@ -40,6 +40,9 @@ const ChatPopover = () => {
       socket.emit("chatMessage", message);
       setNewMessage("");
     }
+
+    // logging
+    console.log(participants);
   };
   const handleKickOut = (participant, index) => {
     socket.emit("kickOut", participant);
